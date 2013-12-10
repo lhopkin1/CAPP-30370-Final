@@ -28,13 +28,14 @@
 					.beta {float:left; margin-right:4%; margin-top:0 max-width:20%;}
 						.site-nav a {text-align:left;}
 				
-					.alpha {float:left; margin:0em 2em; max-width:65%;}
+					.alpha {float:left; max-width:65%;}
 						.alpha h2 {text-align:left;}
 				}
 				
 				@media only screen and (min-width:1000px) {
-					.alpha {margin-left: 3em;}
-					
+					.col1, .col2 {float:left; width:48%;}
+						.col1 h2, .col2 h2 {text-align:center;}
+						.col1 {margin-right:4%;}
 				}
 			</style>
 	</head>
@@ -56,20 +57,7 @@
 		</div>
 		
 		<main class="alpha" role="main">
-			<h2>Education</h2>
-				<h3>University of Notre Dame</h3>
-					<ul>
-						<li>Class of 2015</li>
-						<li>Bachelor of Arts</li>
-						<li>Major: Economics</li>
-						<li>GPA: 3.6</li>
-					</ul>
-				<h3>Saint Joseph Central Catholic High School</h3>
-					<ul>
-						<li>Class of 2011</li>
-						<li>GPA: 3.6</li>
-					</ul>
-			
+			<div class="col1">		
 			<h2>Experience</h2>
 				<h3><em>Building Manager</em>, Student Activities Facilities</h3>
 					<ul>
@@ -98,7 +86,22 @@
 						<li>Aided with the construction of a new building</li>
 						<li>Detailed sold units</li>
 					</ul>
-					
+			</div>
+			
+			<div class="col2">
+			<h2>Education</h2>
+				<h3>University of Notre Dame</h3>
+					<ul>
+						<li>Class of 2015</li>
+						<li>Bachelor of Arts</li>
+						<li>Major: Economics</li>
+						<li>GPA: 3.6</li>
+					</ul>
+				<h3>Saint Joseph Central Catholic High School</h3>
+					<ul>
+						<li>Class of 2011</li>
+						<li>GPA: 3.6</li>
+					</ul>
 			<h2>Leadership</h2>
 				<ul>
 					<li><em>Academic Commissioner</em>, Keenan Hall</li>
@@ -111,6 +114,7 @@
 					<li><strong>Computer</strong>: Word, Excel, PowerPoint, Visual Basic, R</li>
 					<li><strong>Audio&#47;Visual</strong>: Operation of mixing boards and projectors</li>
 				</ul>
+			</div>
 		</main>
 		
 		<footer id="footer" class="site-footer vcard boardertop" role="contentinfo">
