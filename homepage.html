@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8"></meta>		
+		<meta content="width=device-width" name="viewport"></meta>
+		<meta content="Web Design Final Project" name="Final Project"></meta>
+		<title>Levi Hopkins</title>
+		
+		<style>
+				* {-moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box;}
+				html {width:100%; margin:0; padding:0; font-size:100%;}
+				body {width:100%; margin:1em; padding:0; color:#333; font:1em/1.5em "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;}
+				
+				.site-header h1,.alpha h2 {text-align:center; line-height:130%;}
+				
+				.alpha {margin:1em; padding:1em;}
+				
+				.beta {margin:auto; padding 1em; max-width:70%;}
+					.site-nav ul {list-style:none; padding:0;}
+					.site-nav a {display:block; margin:.5em; padding:1em; text-align:center; color:#ccc; text-decoration:none; background-color:gray;}
+					
+				.quote {max-width: 100%; clear:both; display:block; margin-left:auto; margin-right:auto;}
+				
+				body {margin:0; padding:1em;}
+				
+				.site-footer {clear:both; padding:1em; text-align:center; border-top:1px solid gray;}
+				
+				@media only screen and (min-width:700px) {
+					.beta {float:left; margin-right:4%; margin-top:0; max-width:20%;}
+						.site-nav a {text-align:left;}
+				
+					.alpha {float:left;/* margin:0em 1em;*/ max-width:65%;}
+						.col1 h2 {text-align:left;}
+				}
+				
+				@media only screen and (min-width:1000px) {
+					.alpha {margin-left: 5em;}
+					
+					.gamma {float:left; display:inline;}
+						.col1 {max-width:55%;}
+						.col2 {margin-left:2em; max-width:33%;}
+				}
+			</style>
+	</head>
+	
+	<body>
+		<header id="header" class="site-header" role="banner">
+			<h1>Personal Site of Levi Hopkins</h1>
+		</header>
+		
+		<div class="beta">
+			<nav id="nav" class="site-nav" role="navigation">
+				<ul>
+					<li><a href="./homepage.html">Homepage</a></li>
+					<li><a href="./hometown.html">Hometown</a></li>
+					<li><a href="./interests.html">Interests</a></li>
+					<li><a href="./resume.html">Resume</a></li>
+				</ul>
+			</nav>
+		</div>
+		
+		<main class="alpha" role="main">
+			<div class="gamma col1">
+			<h2>You Made It</h2>
+			<p>Hello and welcome to the personal site of Levi Hopkins. The site navigation will lead you
+			to pages containing all kinds of information about me in the categories of my hometown, my interests,
+			and my resume. I hope you find the material interesting. Feel free to use my contact information at the
+			bottom of the page to ask me any questions. After you have browsed the site you can find links to some 
+			of my favorite sites here on the homepage. Thanks for visiting and I hope you enjoy your time here.</p>
+			</div>
+			
+			<div class="gamma col2">
+			<h2>Links</h2>
+			<ul>
+					<li>For sports fans, <a href="http://espn.go.com/">click here</a>.</li>
+					<li>To keep up with the lastest news, <a href="http://www.nytimes.com/">click here</a>.</li>
+					<li>If you feel like procrastinating, <a href="http://www.reddit.com/">click here</a>.</li>
+					<li>To buy anything and everything, <a href="http://www.amazon.com/">click here</a>.</li>
+			</ul>
+			</div>
+		</main>
+		
+		<figure>
+			<img class="quote" src="quote.jpg" alt="Lou Holtz Quote">
+		</figure>
+		
+		<footer id="footer" class="site-footer vcard boardertop" role="contentinfo">
+			<p class="contact-info adr">
+				<span class="fn">Levi Hopkins</span><br>
+				<span class="street-address">100 Main Building</span><br>
+				<span class="locality">Notre Dame</span>,
+				<span class="region" title="Indiana">IN</span>
+				<span class="postal-code">46556</span><br>
+				<span class="tel">
+					<span class="type">Phone:</span>
+					574.613.5000
+				</span><br>
+				<span class="email">
+					<a href="mailto:donotreply@nd.edu">donotreply@nd.edu</a>
+				</span>
+			</p>
+		</footer>
+	</body>
+
+</html>

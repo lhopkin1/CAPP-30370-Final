@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8"></meta>		
+		<meta content="width=device-width" name="viewport"></meta>
+		<meta content="hometown" name="Hometown"></meta>
+		<title>Hometown</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+		<style>
+				* {-moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box;}
+				html {width:100%; margin:0; padding:0; font-size:100%;}
+				body {width:100%; margin:1em; padding:0; color:#333; font:1em/1.5em "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;}
+				
+				.site-header h1, .alpha h2 {text-align:center; line-height:130%;}
+				
+				.alpha {margin:1em; padding:1em;}
+				
+				.beta {margin:auto; padding 1em; max-width:70%;}
+					.site-nav ul {list-style:none; padding:0;}
+					.site-nav a {display:block; margin:.5em; padding:1em; text-align:center; color:#ccc; text-decoration:none; background-color:gray;}
+				.tabs ul {display:none;}
+				
+				.map {max-width: 100%; display:block; margin-left:auto; margin-right:auto;}
+				
+				body {margin:0; padding:1em;}
+				
+				.site-footer {clear:both; padding:1em; text-align:center; border-top:1px solid gray;}
+				
+				@media only screen and (min-width:700px) {
+					.tabs ul {display:inline; margin:0; padding:0; list-style:none;}
+						.tabs ul li {display:inline-block;}
+						.tabs ul li a {display:block; padding:1em; color:#ccc; text-decoration:none; background-color:gray;}
+						.tabs-sections {padding:0 1em; border:1px solid gray;}
+						.tabs ul .active a {color:#000; background-color:lightgray;}
+						.s2, .s3 {display:none;}
+					
+					.beta {float:left; margin-right:4%; margin-top:0; max-width:20%;}
+						.site-nav a {text-align:left;}
+				
+					.alpha {float:left; max-width:65%;}
+						.alpha h2 {text-align:left;}
+				}
+				
+				@media only screen and (min-width:1000px) {
+					
+				}
+			</style>
+	</head>
+	
+	<body>
+		<header id="header" class="site-header" role="banner">
+			<h1>Hometown</h1>
+		</header>
+		
+		<div class="beta">
+			<nav id="nav" class="site-nav" role="navigation">
+				<ul>
+					<li><a href="./homepage.html">Homepage</a></li>
+					<li><a href="./hometown.html">Hometown</a></li>
+					<li><a href="./interests.html">Interests</a></li>
+					<li><a href="./resume.html">Resume</a></li>
+				</ul>
+			</nav>
+		</div>
+		
+		<main class="alpha" role="main">
+			<div class="tabs">
+				<ul>
+					<li class="active"><a href="#location">Location</a></li>
+					<li><a href="#history">History</a></li>
+					<li><a href="#demos">Demographics</a></li>
+				</ul>
+
+				<div class="tabs-sections">
+					<section id="location" class="s s1">
+						<h2>Location</h2>
+						<p>For my entire life, I have called the small town of Ironton, Ohio home. As 
+						shown in the map below, Ironton is found in southern Ohio as part of the 
+						Ohio, Kentucky, and West Virginia tri&ndash;state area. The foothills of 
+						the Appalachian Mountains run through the area, which is reflected 
+						in the history and culture of the people. It has been a great place 
+						to grow up and my experiences there are a very important part of who I 
+						am today.</p>
+						<figure>
+							<img class="map" src="map.png" alt="Ohio Map">
+						</figure>
+					</section>
+					<section id="history" class="s s2">
+						<h2>History</h2>
+						<p>Ironton was founded in 1849 by John Campbell, who was a prominent pig 
+						iron manufacturer in the area. Interested in expanding his foundry business, 
+						and due to the area's rich iron&ndash;ore content in the hills to the north, he 
+						became interested in the lands surrounding what would later become the city 
+						of Ironton. The location of Ironton was chosen for its position along the 
+						Ohio River, which would allow for transport of the much&ndash;needed commodity, 
+						iron&ndash;ore, and the slope of the land itself, which facilitated movement of 
+						the raw material to the local blast furnaces.</p>
+						<p>The Great Depression of the 1930s and two major floods (1917, 1937) devastated 
+						the city to the point that most if not all the city's industries had closed down 
+						for good. Nevertheless, some commerce remained; the Norfolk and Western Railway 
+						built a new railroad station downtown in 1906, and it continued in operation 
+						throughout the period. As the iron industries closed, Ironton had little with 
+						which to replace them. A labor&ndash;oriented town, Ironton managed to keep alive 
+						by trying to attract heavy industry to the region. Companies like Allied Signal 
+						and Alpha Portland Cement did build in town. The continued dependency on labor 
+						industries has severely hurt the region as a whole, and Ironton even more so. By 
+						2004, both Alpha Portland Cement and Allied Signal were gone, and Ironton had shrunk 
+						by almost 50%.<br><em>Source: Wikipedia</em></p>
+					</section>
+					<section id="demos" class="s s3">
+						<h2>Demographics</h2>
+						<p>As of the census of 2010, there were 11,129 people, 4,817 households, and 2,882 
+						families residing in the city. The population density was 2,675.2 inhabitants per square 
+						mile. There were 5,382 housing units at an average density of 1,293.8 per square mile. 
+						The racial makeup of the city was 92.6% White, 4.7% African American, 0.2% Native American, 
+						0.3% Asian, 0.1% from other races, and 2.1% from two or more races. Hispanic or Latino of 
+						any race were 0.5% of the population.</p>
+						<p>Like much of Appalachia, Ironton has a fairly high level of poverty. From 2007 to 2011, 
+						the median household income for the same was &#36;31,462. For the same time period, 
+						21.0% of residents lived below the poverty level. This is most likely partially due to 
+						low levels of education; as of 2011 only 15.3% of residents 25 and older held a bachelor's 
+						degree or higher.<br><em>Sources: Wikipedia, Census Bureau</em></p>
+					</section>
+				</div>
+			</div>
+		</main>
+		
+		<script>
+			$( ".tabs ul li:nth-child(1)" ).on("click", function (e) {
+				e.preventDefault();
+				$('.tabs ul > li.active').removeClass('active');
+				$(this).addClass('active');
+				$('#location').show();
+				$('#history').hide();
+				$('#demos').hide();
+			});
+	
+			$( ".tabs ul li:nth-child(2)" ).on("click", function (f) {
+				f.preventDefault();
+				$('.tabs ul > li.active').removeClass('active');
+				$(this).addClass('active');
+				$('#location').hide();
+				$('#history').show();
+				$('#demos').hide();
+			});
+	
+			$( ".tabs ul li:nth-child(3)" ).on("click", function (g) {
+				g.preventDefault();
+				$('.tabs ul > li.active').removeClass('active');
+				$(this).addClass('active');
+				$('#location').hide();
+				$('#history').hide();
+				$('#demos').show();
+			});
+		</script>
+		
+		<footer id="footer" class="site-footer vcard boardertop" role="contentinfo">
+			<p class="contact-info adr">
+				<span class="fn">Levi Hopkins</span><br>
+				<span class="street-address">100 Main Building</span><br>
+				<span class="locality">Notre Dame</span>,
+				<span class="region" title="Indiana">IN</span>
+				<span class="postal-code">46556</span><br>
+				<span class="tel">
+					<span class="type">Phone:</span>
+					574.613.5000
+				</span><br>
+				<span class="email">
+					<a href="mailto:donotreply@nd.edu">donotreply@nd.edu</a>
+				</span>
+			</p>
+		</footer>
+	</body>
+
+</html>
