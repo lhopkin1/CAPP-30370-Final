@@ -2,51 +2,12 @@
 <html>
 
 	<head>
-		<meta charset="utf-8"></meta>		
-		<meta content="width=device-width" name="viewport"></meta>
-		<meta content="hometown" name="Hometown"></meta>
+		<meta charset="utf-8">
+		<meta content="width=device-width" name="viewport">
+		<meta content="hometown" name="description">
 		<title>Hometown</title>
+		<link rel="stylesheet" href="hometown1.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-		<style>
-				* {-moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box;}
-				html {width:100%; margin:0; padding:0; font-size:100%;}
-				body {width:100%; margin:1em; padding:0; color:#333; font:1em/1.5em "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;}
-				
-				.site-header h1, .alpha h2 {text-align:center; line-height:130%;}
-				
-				.alpha {margin:1em; padding:1em;}
-				
-				.beta {margin:auto; padding 1em; max-width:70%;}
-					.site-nav ul {list-style:none; padding:0;}
-					.site-nav a {display:block; margin:.5em; padding:1em; text-align:center; color:#ccc; text-decoration:none; background-color:gray;}
-				.tabs ul {display:none;}
-				
-				.map {max-width: 100%; display:block; margin-left:auto; margin-right:auto;}
-				
-				body {margin:0; padding:1em;}
-				
-				.site-footer {clear:both; padding:1em; text-align:center; border-top:1px solid gray;}
-				
-				@media only screen and (min-width:700px) {
-					.tabs ul {display:inline; margin:0; padding:0; list-style:none;}
-						.tabs ul li {display:inline-block;}
-						.tabs ul li a {display:block; padding:1em; color:#ccc; text-decoration:none; background-color:gray;}
-						.tabs-sections {padding:0 1em; border:1px solid gray;}
-						.tabs ul .active a {color:#000; background-color:lightgray;}
-						.s2, .s3 {display:none;}
-					
-					.beta {float:left; margin-right:4%; margin-top:0; max-width:20%;}
-						.site-nav a {text-align:left;}
-				
-					.alpha {float:left; max-width:65%;}
-						.alpha h2 {text-align:left;}
-				}
-				
-				@media only screen and (min-width:1000px) {
-					.tabs-sections {overflow:hidden;}
-						.s3 p {float:left; display:inline; margin:1%; width:30%;}
-				}
-			</style>
 	</head>
 	
 	<body>
@@ -126,38 +87,50 @@
 						21.0% of residents lived below the poverty level. This is most likely partially due to 
 						low levels of education; as of 2011 only 15.3% of residents 25 and older held a bachelor's 
 						degree or higher.<br><em>Sources: Wikipedia, Census Bureau</em></p>
+						<figure>
+							<img class="cityscape" src="cityscape.jpg" alt="Ironton Cityscape">
+						</figure>
 					</section>
 				</div>
 			</div>
 		</main>
 		
 		<script>
-			$( ".tabs ul li:nth-child(1)" ).on("click", function (e) {
-				e.preventDefault();
-				$('.tabs ul > li.active').removeClass('active');
-				$(this).addClass('active');
+		$(window).on("load resize", function() {
+			if ($(window).width() < 700) {
 				$('#location').show();
-				$('#history').hide();
-				$('#demos').hide();
-			});
-	
-			$( ".tabs ul li:nth-child(2)" ).on("click", function (f) {
-				f.preventDefault();
-				$('.tabs ul > li.active').removeClass('active');
-				$(this).addClass('active');
-				$('#location').hide();
 				$('#history').show();
-				$('#demos').hide();
-			});
-	
-			$( ".tabs ul li:nth-child(3)" ).on("click", function (g) {
-				g.preventDefault();
-				$('.tabs ul > li.active').removeClass('active');
-				$(this).addClass('active');
-				$('#location').hide();
-				$('#history').hide();
 				$('#demos').show();
-			});
+			}
+			else {
+				$( ".tabs ul li:nth-child(1)" ).on("click", function (e) {
+					e.preventDefault();
+					$('.tabs ul > li.active').removeClass('active');
+					$(this).addClass('active');
+					$('#location').show();
+					$('#history').hide();
+					$('#demos').hide();
+				});
+	
+				$( ".tabs ul li:nth-child(2)" ).on("click", function (f) {
+					f.preventDefault();
+					$('.tabs ul > li.active').removeClass('active');
+					$(this).addClass('active');
+					$('#location').hide();
+					$('#history').show();
+					$('#demos').hide();
+				});
+	
+				$( ".tabs ul li:nth-child(3)" ).on("click", function (g) {
+					g.preventDefault();
+					$('.tabs ul > li.active').removeClass('active');
+					$(this).addClass('active');
+					$('#location').hide();
+					$('#history').hide();
+					$('#demos').show();
+				});
+			}
+		});
 		</script>
 		
 		<footer id="footer" class="site-footer vcard boardertop" role="contentinfo">

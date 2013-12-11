@@ -1,0 +1,23 @@
+@viewport {width:device-width; zoom:1;}
+* {-moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box;}
+html {width:100%; margin:0; padding:0; font-size:100%;}
+body {width:100%; margin:0; padding:1em; color:#333; font:1em/1.5em "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;}
+
+.site-header h1,.alpha h2 {text-align:center; line-height:130%;}
+
+.alpha {margin:1em; padding:1em;}
+
+.beta {margin:auto; padding 1em; max-width:70%;}
+	.site-nav ul {list-style:none; padding:0;}
+	.site-nav a {display:block; margin:.5em; padding:1em; text-align:center; color:#ccc; text-decoration:none; background-color:gray;}
+
+.site-footer {clear:both; padding:1em; text-align:center; border-top:1px solid gray;}
+
+@media only screen and (min-width:700px) {
+	.beta {float:left; margin-right:4%; margin-top:1em; max-width:20%;}
+		.site-nav a {text-align:left;}
+}
+
+@media only screen and (min-width:1000px) {
+	
+}
