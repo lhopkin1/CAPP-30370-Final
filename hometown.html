@@ -1,6 +1,5 @@
 <!doctype html>
 <html>
-
 	<head>
 		<meta charset="utf-8">
 		<meta content="width=device-width" name="viewport">
@@ -8,6 +7,7 @@
 		<title>Hometown</title>
 		<link rel="stylesheet" href="hometown1.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+		<script src="hometown2.js"></script>
 	</head>
 	
 	<body>
@@ -63,7 +63,8 @@
 						for good. Nevertheless, some commerce remained; the Norfolk and Western Railway 
 						built a new railroad station downtown in 1906, and it continued in operation 
 						throughout the period. As the iron industries closed, Ironton had little with 
-						which to replace them. A labor&ndash;oriented town, Ironton managed to keep alive 
+						which to replace them.</p>
+						<p>A labor&ndash;oriented town, Ironton managed to keep alive 
 						by trying to attract heavy industry to the region. Companies like Allied Signal 
 						and Alpha Portland Cement did build in town. The continued dependency on labor 
 						industries has severely hurt the region as a whole, and Ironton even more so. By 
@@ -95,44 +96,6 @@
 			</div>
 		</main>
 		
-		<script>
-		$(window).on("load resize", function() {
-			if ($(window).width() < 700) {
-				$('#location').show();
-				$('#history').show();
-				$('#demos').show();
-			}
-			else {
-				$( ".tabs ul li:nth-child(1)" ).on("click", function (e) {
-					e.preventDefault();
-					$('.tabs ul > li.active').removeClass('active');
-					$(this).addClass('active');
-					$('#location').show();
-					$('#history').hide();
-					$('#demos').hide();
-				});
-	
-				$( ".tabs ul li:nth-child(2)" ).on("click", function (f) {
-					f.preventDefault();
-					$('.tabs ul > li.active').removeClass('active');
-					$(this).addClass('active');
-					$('#location').hide();
-					$('#history').show();
-					$('#demos').hide();
-				});
-	
-				$( ".tabs ul li:nth-child(3)" ).on("click", function (g) {
-					g.preventDefault();
-					$('.tabs ul > li.active').removeClass('active');
-					$(this).addClass('active');
-					$('#location').hide();
-					$('#history').hide();
-					$('#demos').show();
-				});
-			}
-		});
-		</script>
-		
 		<footer id="footer" class="site-footer vcard boardertop" role="contentinfo">
 			<p class="contact-info adr">
 				<span class="fn">Levi Hopkins</span><br>
@@ -150,5 +113,4 @@
 			</p>
 		</footer>
 	</body>
-
 </html>
