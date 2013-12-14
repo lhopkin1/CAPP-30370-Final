@@ -27,4 +27,6 @@ body {margin:0; padding:1em;}
 	.col1, .col2 {float:left; width:48%;}
 		.col1 h2, .col2 h2 {text-align:center;}
 		.col1 {margin-right:4%;}
+		
+	#footer {background-image:url(background.png); background-size:contain, cover;}
 }

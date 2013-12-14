@@ -28,4 +28,6 @@ body {width:100%; margin:0; padding:1em; background-color:lightsteelblue; font:1
 	.gamma {float:left; display:inline;}
 		.col1 {max-width:55%;}
 		.col2 {margin-left:2em; max-width:33%;}
+		
+	#footer {background-image:url(background.png); background-size:contain, cover;}
 }

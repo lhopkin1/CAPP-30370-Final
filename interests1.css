@@ -11,13 +11,31 @@ body {width:100%; margin:0; padding:1em; background-color:lightsteelblue; font:1
 	.site-nav ul {list-style:none; padding:0;}
 	.site-nav a {display:block; margin:.5em; padding:1em; text-align:center; color:#ccc; text-decoration:none; background-color:gray;}
 
+.sites {max-width:100%; margin:1em;}
+	
+.sites:hover {-webkit-transform:scale(1.25);}
+
+.loop {max-width:100%; padding:.5em; background-color:red; -webkit-animation:colors 5s linear infinite alternate;}
+
+@-webkit-keyframes colors {
+   0% {background-color:red; color:purple;}
+  20% {background-color:orange;}
+  40% {background-color:yellow;}
+  60% {background-color:green;}
+  80% {background-color:blue;}
+  100% {background-color:purple; color:red;}
+}
+	
 .site-footer {clear:both; padding:1em; text-align:center; border-top:1px solid gray;}
 
 @media only screen and (min-width:700px) {
 	.beta {float:left; margin-right:4%; margin-top:1em; max-width:20%;}
 		.site-nav a {text-align:left;}
+		
+	.alpha {float:left; margin-top:0; max-width:65%;}
+		.alpha h2 {text-align:left;}
 }
 
 @media only screen and (min-width:1000px) {
-	
+	#footer {background-image:url(background.png); background-size:contain, cover;}
 }
