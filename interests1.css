@@ -37,5 +37,9 @@ body {width:100%; margin:0; padding:1em; background-color:lightsteelblue; font:1
 }
 
 @media only screen and (min-width:1000px) {
+	.travel figure {float:left; overflow:hidden; display:block; margin:1%; width:29%;}
+
+	.loop {clear:both;}
+	
 	#footer {background-image:url(background.png); background-size:contain, cover;}
 }
