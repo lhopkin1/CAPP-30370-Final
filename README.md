@@ -22,6 +22,7 @@ main content of the page is shown to the right. Second, at 1000px the footer dis
 a background.
 
 ###Three Column Layout
+
 When viewed at desktop size, the "History" and "Demographics" sections of the hometown 
 page are displayed using a three column layout. The images on the interests page are 
 shown three-across when viewed at desktop size as well.
@@ -31,7 +32,7 @@ shown three-across when viewed at desktop size as well.
 The size of the images on the interests page increase by 25% when the mouse hovers 
 over them using this line of code: .sites:hover {-webkit-transform:scale(1.25);}
 
-##CSS Animation on Continuous
+###CSS Animation on Continuous
 
 On the interests page, the background of the paragraph with the title "Web Design" 
 changes colors in the following order: red, orange, yellow, green, blue, purple. 
